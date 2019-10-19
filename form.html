@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>www.akilahinstitute.org</title>
+<link rel="stylesheet" type="text/css" href="g.css">
+<script>
+function check(script)
+{
+if ((script.f1.value=="")||(script.f2.value=="")
+||(script.f3.value=="")||(script.f4.value=="")||(script.f5.value=="")
+||(script.f6.value=="")||(script.f7.value==""))
+{
+alert("fill all carefully");
+}
+else
+{
+alert("all are filled yet");
+}
+}
+</script>
+</head>
+<body>
+<div class="alldiv">
+<div id="header">
+<h1>WELCOME TO THE AKILAH INSTITUTE FOR WOMEN!</h1>
+</div>
+<div id="menu">
+<img src="emma.jpg"width="300"height="180">
+<ul>
+<li><a href="donate.html">Donate</a></li>
+<li><a href="https://www.akilahinstitute.org/akilah-foundation/">Foundation</a></li>
+<li><a href="#">Contact Us</a>
+<ul>
+<li><a href="https://www.instagram.com/akilahinstitute/">Instagram</a></li>
+<li><a href="https://www.facebook.com/akilahinstitute">Facebook</a></li>
+<li><a href="https://twitter.com/akilahinstitute">Twitter</a></li>
+</ul>
+</li>
+<li><a href="academics.html">Academics</a></li>
+<li><a href="aboutus.html">About Us</a></li>
+<li><a href="home.html">Home</a></li></ul>
+</div>
+<div id="well1">
+<center><b><h3>Please fill this form:</h3></b></center>
+<form id="ff" onsubmit="check(this)" action="" method="POST">
+<center><table id="t2" border="0">
+<tr><td><b>First name:</b></td><td><input type="text" name="fn" id="f1" placeholder="First name"></td></tr><br>
+<tr><td><b>Second name:</b></td><td><input type="text" name="sn" id="f2" placeholder="Second name"></td></tr><br>
+<tr><td><b>District:</b></td> <td><input type="text" name="d" id="f3" placeholder="district"></td></tr><br>
+<tr><td><b>Sector:</b></td><td><input type="text" name="s" id="f4" placeholder="Sector"></td></tr><br>
+<tr><td><b>ID:</b></td><td><input type="text" name="i" id="f5" placeholder="identity"></td></tr><br>
+<tr><td><b>E-mail:</b></td><td><input type="text" name="e" id="f6" placeholder="e-mail"></td></tr><br>
+<tr><td><b>Phone:</b></td><td><input type="text" name="p" id="f7" placeholder="Phone"></td></tr><br>
+</table>
+</center>
+<input type="submit" value="submit" id="subm" name="submit">
+</form>
+</div>
+<div class="footer">
+<li><a href="https://www.facebook.com/akilahinstitute" class="a1">Facebook<br><img src="f.png"width="100"height="50"></a></li>
+<li><a href="https://twitter.com/akilahinstitute" class="a1">Twitter<br><img src="t.png"width="100"height="50"></a></li>
+<li><a href="https://www.instagram.com/akilahinstitute/" class="a1">Instagram<br><img src="i.png"width="100"height="50"></a></li>
+</div>
+</div>
+</body>
+</html>
+<?php
+mysql_connect("localhost","root""");
+mysql_select_db("myweb1")or die("database not exist");
+?>
